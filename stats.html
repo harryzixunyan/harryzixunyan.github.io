@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="math.html">Math Research</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="stats.html">Stats Research</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="workshop.html">Workshops</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">CV</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>ZIXUN HARRY YAN</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-wrapper">
+        <div class="math-title">
+            <h1>Learning Statistics through Social Justice</h1>
+        </div>
+
+        <div class="math-overview">
+            The focus of this project is to develop and implement lessons for high school students to learn statistics concepts through the context of social justice issues in collaboration with Education Development Center (EDC), a global nonprofit organization.
+        The goal of this project is to create lessons that would
+        <ul>
+            <li>
+                Help high school students develop statistical thinking and scientific argumentation skills with quantitative data
+            </li>
+            <li>
+                Motivate high school students to see the importance of statistics by discussing topics that students are interested in and using real data
+            </li>
+        </ul>
+        <p>
+            The importance of this project:
+        </p>
+        <ul>
+            <li>
+                There is need to engage high school students with statistics and quantitative data analysis
+            </li>
+            <li>
+                The National Council for the Social Studies C3 Framework emphasizes concepts that align with the investigative process put forth in the Guidelines for Assessment and Instruction in Statistics Education (GAISE):
+                <ol>
+                    <li>
+                        Formulate Questions
+                    </li>
+                    <li>
+                        Collect Data
+                    </li>
+                    <li>
+                        Analyze Data
+                    </li>
+                    <li>
+                        Interpret Results
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <p>
+            The poster below presents the details of this project.
+        </p>
+        </div>
+
+
+        <iframe src="images/Chance&Medina_Final_Poster.pdf#toolbar=0" width="100%" height="1200px">
+        </iframe>
+    </div>
+
+    <div class="footer">
+        <div class="footer-copyright" style="text-align: center;">
+            &copy; Designed by Zixun Harry Yan
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>

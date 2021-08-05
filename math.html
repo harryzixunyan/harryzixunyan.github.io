@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper  active-nav-link">
+                    <a href="math.html">Math Research</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="stats.html">Stats Research</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="workshop.html">Workshops</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">CV</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>ZIXUN HARRY YAN</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="math-title">
+                <h1>Energy Localization in Granular Crystals for Energy Harvesting</h1>
+            </div>
+            <div class="center-image"> 
+                <img class="granular" src="images/Screen Shot 2020-09-02 at 10.41.23 AM.png" alt="">
+            </div>
+            <div class="math-overview">
+                The focus of this project is the study of time-periodic solutions on a dimer granular crystal chain. We consider a chain composed of n=20 spherical beads which are made of chrome steel (dark blue particles in figure above) and tungsten carbide (light blue particles in figure above) materials. The beads are supported by two rods which restrict their lateral movements. A static force, denoted as F<sub>0</sub>  hereafter, is applied at both ends in order to make sure each bead is in contact with adjacent beads. The granular chain is harmonically driven at the boundaries corresponding to 0<sup>th</sup> and (n+1)<sup>th</sup> location of the chain. The drive at both ends has the form 𝑎cos⁡(2𝜋𝑓𝑡) where 𝑎 and 𝑓 are the amplitude and frequency of the excitation, respectively. The following is a video that explains the set up of this project using animations.
+            </div>
+            <section class="video">
+                <iframe width="854" height="480"
+                src="https://www.youtube.com/embed/wg5-3nm-pfE">
+                </iframe>
+            </section>
+            <div class="math-overview">
+                We then want to develop fixed-point methods for finding periodic-orbits as well as using Floquet theory to study their stability characteristics. At the end of the research, we were able to develop a continuation code, i.e., algorithmic techniques for exploring the configuration space of solutions over the parameter space, in MATLAB which perfectly matched the theoretical prediction. The poster below presents the details of our findings.
+            </div>
+            <iframe src="images/charalampidis_team_poster.pdf#toolbar=0" width="100%" height="750px">
+            </iframe>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-copyright" style="text-align: center;">
+            &copy; Designed by Zixun Harry Yan
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>
